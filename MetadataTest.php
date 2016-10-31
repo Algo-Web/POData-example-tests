@@ -19,7 +19,6 @@ class MetadataTest extends TestCase
         ->see('<atom:title>Default</atom:title>')
         ->see('<collection href="customer">')
         ->see('<collection href="photo">')
-        ->see('<collection href="product">')
         ->see('<collection href="staff">')
         ->dontSee("Whoops");
     }
