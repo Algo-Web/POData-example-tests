@@ -220,7 +220,7 @@ class CustomerFilterTest extends TestCase
      public function testfilterreplaceEQGood()
     {
 
-        $this->visit('odata.svc/customer?$filter=replace(name,%20%27The%20%27,%20%27%27)%20eq%20%27doctor%27')
+        $this->visit('odata.svc/customer?$filter=replace(name,%20%27The%20%27,%20%27%27)%20eq%20%27Doctor%27')
         ->see('<title type="text">customer</title>')
         ->see('xml:base="')
         ->dontSee('<d:id m:type="Edm.Int32">1</d:id>')
